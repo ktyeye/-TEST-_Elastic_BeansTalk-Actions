@@ -25,7 +25,7 @@ SECRET_KEY = '9ce-!r42&57z$&e=8%dmn_-hos-f6@or4=wq6(3%b12f0w*3ad'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ebdjango-dev2.ap-northeast-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['ebdjango-dev2.ap-northeast-2.elasticbeanstalk.com', '*']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'myapp.apps.MyappConfig',
 ]
 
 MIDDLEWARE = [
